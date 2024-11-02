@@ -8,3 +8,14 @@ C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagm
 C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.csproj.CoreCompileInputs.cache
 C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.exe
 C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.pdb
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\bin\Debug\SchoolManagmentSystem.exe.config
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\bin\Debug\SchoolManagmentSystem.exe
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\bin\Debug\SchoolManagmentSystem.pdb
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.csproj.AssemblyReference.cache
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.Form1.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.LoginForm.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.Properties.Resources.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.csproj.GenerateResource.cache
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.csproj.CoreCompileInputs.cache
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.exe
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.pdb

@@ -23,6 +23,9 @@ namespace SchoolManagmentSystem
             if(panel2.Width >= 525)
             {
                 timer1.Stop();
+                LoginForm lForm=new LoginForm();
+                lForm.Show();
+                this.Hide();
             }
         }
     }
