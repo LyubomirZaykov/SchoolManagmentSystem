@@ -19,3 +19,5 @@ C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\School
 C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.csproj.CoreCompileInputs.cache
 C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.exe
 C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.pdb
+C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.LoginForm.resources
+C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.MainForm.resources

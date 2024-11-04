@@ -13,7 +13,7 @@ namespace SchoolManagmentSystem
 {
     public partial class LoginForm : Form
     {
-        readonly SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lyubo\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
+        readonly SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lyubo\OneDrive\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
         public LoginForm()
         {
             InitializeComponent();
@@ -46,6 +46,9 @@ namespace SchoolManagmentSystem
                         if (table.Rows.Count >= 1)
                         {
                             MessageBox.Show("Login Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            MainForm mForm = new MainForm();
+                            mForm.Show();
+                            this.Hide();
                         }
                         else
                         {
