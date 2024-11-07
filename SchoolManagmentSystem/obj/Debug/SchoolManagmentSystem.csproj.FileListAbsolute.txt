@@ -21,3 +21,5 @@ C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\School
 C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.pdb
 C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.LoginForm.resources
 C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.MainForm.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.DashboardForm.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.MainForm.resources
