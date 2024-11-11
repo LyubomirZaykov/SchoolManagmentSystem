@@ -23,3 +23,8 @@ C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagm
 C:\Users\lyubo\Desktop\programming\C# project\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.MainForm.resources
 C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.DashboardForm.resources
 C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.MainForm.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\bin\Debug\AddStudentForm.resx
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\bin\Debug\AddStudentForm.cs
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\bin\Debug\AddStudentForm.Designer.cs
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.AddStudentForm.resources
+C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\SchoolManagmentSystem\obj\Debug\SchoolManagmentSystem.AddTeacherForm.resources

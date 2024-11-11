@@ -14,7 +14,7 @@ namespace SchoolManagmentSystem
     public partial class LoginForm : Form
     {
         //readonly SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lyubo\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
-        readonly SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lyubo\OneDrive\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
+        public static readonly SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lyubo\Desktop\engineering\programming\C#\School Managment System\SchoolManagmentSystem\school.mdf;Integrated Security=True;Connect Timeout=30");
         public LoginForm()
         {
             InitializeComponent();
