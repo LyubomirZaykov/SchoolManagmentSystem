@@ -183,6 +183,7 @@
             this.teacherImportBtn.TabIndex = 13;
             this.teacherImportBtn.Text = "Import";
             this.teacherImportBtn.UseVisualStyleBackColor = false;
+            this.teacherImportBtn.Click += new System.EventHandler(this.teacherImportBtn_Click);
             // 
             // panel3
             // 
@@ -198,6 +199,7 @@
             this.teacherImage.Location = new System.Drawing.Point(0, 0);
             this.teacherImage.Name = "teacherImage";
             this.teacherImage.Size = new System.Drawing.Size(121, 110);
+            this.teacherImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.teacherImage.TabIndex = 20;
             this.teacherImage.TabStop = false;
             // 

@@ -40,7 +40,7 @@ namespace SchoolManagmentSystem
                                 TeacherGender = reader["teacher_gender"].ToString(),
                                 TeacherAddress = reader["teacher_address"].ToString(),
                                 Status = reader["teacher_status"].ToString(),
-                                DateInsert = reader["date_insert"].ToString()
+                                DateInsert = reader["date_insert"].ToString(),
                             };
                             listData.Add(addTD);
                         }
