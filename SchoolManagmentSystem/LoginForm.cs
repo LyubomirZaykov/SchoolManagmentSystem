@@ -46,9 +46,11 @@ namespace SchoolManagmentSystem
 
                         if (table.Rows.Count >= 1)
                         {
+                            connect.Close();
                             MessageBox.Show("Login Successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             MainForm mForm = new MainForm();
                             mForm.Show();
+                            
                             this.Hide();
                         }
                         else

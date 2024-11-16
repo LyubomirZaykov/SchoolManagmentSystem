@@ -21,13 +21,14 @@ namespace SchoolManagmentSystem
         public List<AddTeachersData> TeacherData()
         {
             List<AddTeachersData> listData = new List<AddTeachersData>();
-            if (connect.State!=ConnectionState.Open)
+
+            if (connect.State != ConnectionState.Open)
             {
                 try
                 {
                     connect.Open();
-                    string sqlCommand = "SELECT * FROM teacher WHERE data_delete IS NULL";
-                    using(SqlCommand cmd = new SqlCommand(sqlCommand,connect)) 
+                    string sqlCommand = "SELECT * FROM teachers WHERE date_delete IS NULL";
+                    using (SqlCommand cmd = new SqlCommand(sqlCommand, connect))
                     {
                         SqlDataReader reader = cmd.ExecuteReader();
                         while (reader.Read())
@@ -39,6 +40,7 @@ namespace SchoolManagmentSystem
                                 TeacherName = reader["teacher_name"].ToString(),
                                 TeacherGender = reader["teacher_gender"].ToString(),
                                 TeacherAddress = reader["teacher_address"].ToString(),
+                                TeacherImage = reader["teacher_image"].ToString(),
                                 Status = reader["teacher_status"].ToString(),
                                 DateInsert = reader["date_insert"].ToString(),
                             };
@@ -48,11 +50,11 @@ namespace SchoolManagmentSystem
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Error connecting Database: "+ex);
+                    Console.WriteLine("Error connecting Database: " + ex);
                 }
-                finally 
+                finally
                 {
-                    connect.Close(); 
+                    connect.Close();
                 }
             }
 

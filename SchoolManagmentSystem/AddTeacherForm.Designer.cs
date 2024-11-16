@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.teacherStatus = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -134,6 +134,7 @@
             this.teacherClearBtn.TabIndex = 16;
             this.teacherClearBtn.Text = "Clear";
             this.teacherClearBtn.UseVisualStyleBackColor = false;
+            this.teacherClearBtn.Click += new System.EventHandler(this.teacherClearBtn_Click);
             // 
             // teacherUpdateBtn
             // 
@@ -150,6 +151,7 @@
             this.teacherUpdateBtn.TabIndex = 15;
             this.teacherUpdateBtn.Text = "Update";
             this.teacherUpdateBtn.UseVisualStyleBackColor = false;
+            this.teacherUpdateBtn.Click += new System.EventHandler(this.teacherUpdateBtn_Click);
             // 
             // teacherAddBtn
             // 
@@ -297,15 +299,15 @@
             this.teachersGridView.AllowUserToResizeRows = false;
             this.teachersGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.teachersGridView.CausesValidation = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.teachersGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.teachersGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.teachersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.teachersGridView.EnableHeadersVisualStyles = false;
             this.teachersGridView.Location = new System.Drawing.Point(17, 58);
@@ -315,6 +317,7 @@
             this.teachersGridView.RowHeadersVisible = false;
             this.teachersGridView.Size = new System.Drawing.Size(813, 221);
             this.teachersGridView.TabIndex = 1;
+            this.teachersGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.teachersGridView_CellClick);
             // 
             // label1
             // 
