@@ -58,7 +58,7 @@ namespace SchoolManagmentSystem
                             }
                             else
                             {
-                                DateTime today = DateTime.Today;
+                                DateTime today = DateTime.Now;
                                 CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
                                 string insertData = "INSERT INTO teachers " +
                                                            "(teacher_id, teacher_name, teacher_gender, teacher_address, teacher_image, teacher_status, date_insert)" +
@@ -85,6 +85,7 @@ namespace SchoolManagmentSystem
                                     cmd.Parameters.AddWithValue("@dateInsert", today.ToString());
 
                                     cmd.ExecuteNonQuery();
+                                    connect.Close();
                                     TeacherDisplayData();
                                     MessageBox.Show("Added successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     ClearFields();
@@ -138,8 +139,7 @@ namespace SchoolManagmentSystem
 
         private void teacherUpdateBtn_Click(object sender, EventArgs e)
         {
-            if (teacherName.Text == "" || teacherID.Text == "" || teacherGender.SelectedItem == null ||
-                teacherAddress.Text == "" || teacherStatus.SelectedItem == null)
+            if (teacherID.Text == "")
             {
                 MessageBox.Show("Please select item first!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -170,7 +170,7 @@ namespace SchoolManagmentSystem
 
                             using (SqlCommand cmd = new SqlCommand(updateData, connect))
                             {
-                                DateTime today = DateTime.Today;
+                                DateTime today = DateTime.Now;
                                 CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
                                 cmd.Parameters.AddWithValue("@teacherName", teacherName.Text.Trim());
                                 cmd.Parameters.AddWithValue("@teacherGender", teacherGender.Text.Trim());
@@ -227,6 +227,58 @@ namespace SchoolManagmentSystem
                     teacherImage.Image = null;
                 }
                 teacherStatus.Text = row.Cells[6].Value.ToString();
+            }
+        }
+
+        private void teacherDelBtn_Click(object sender, EventArgs e)
+        {
+            if (teacherID.Text == "")
+            {
+                MessageBox.Show("Please select item first!", "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (connect.State!=ConnectionState.Open)
+                {
+                    DialogResult check = MessageBox.Show($"Are you sure you want to Delete Teacher ID : {teacherID.Text.Trim()} ?","Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question); 
+
+                    if (check == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            connect.Open();
+
+                            DateTime today = DateTime.Now;
+                            CultureInfo.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+
+                            string deleteData = "UPDATE teachers SET date_delete=@dateDelete WHERE teacher_id=@teacherID";
+                            using (SqlCommand cmd = new SqlCommand(deleteData, connect))
+                            {
+                                cmd.Parameters.AddWithValue("@teacherID", teacherID.Text.Trim());
+                                cmd.Parameters.AddWithValue("@dateDelete", today.ToString());
+                                cmd.ExecuteNonQuery();
+                                connect.Close();
+                                TeacherDisplayData();
+                                MessageBox.Show("Deleted successfully!", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                ClearFields();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error connecting Database" + ex, "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        finally
+                        {
+                            connect.Close();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cancelled.", "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        ClearFields();
+                    }
+
+                }
             }
         }
     }

@@ -118,6 +118,7 @@
             this.teacherDelBtn.TabIndex = 17;
             this.teacherDelBtn.Text = "Delete";
             this.teacherDelBtn.UseVisualStyleBackColor = false;
+            this.teacherDelBtn.Click += new System.EventHandler(this.teacherDelBtn_Click);
             // 
             // teacherClearBtn
             // 

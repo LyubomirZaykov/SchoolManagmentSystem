@@ -35,24 +35,24 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.studentSection = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.studentGender = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.studentName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.studentID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.studentsGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -65,17 +65,17 @@
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.comboBox3);
+            this.panel2.Controls.Add(this.studentSection);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.studentGender);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.studentName);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.studentID);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 328);
             this.panel2.Name = "panel2";
@@ -170,17 +170,19 @@
             this.panel3.Size = new System.Drawing.Size(121, 110);
             this.panel3.TabIndex = 12;
             // 
-            // comboBox3
+            // studentSection
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.comboBox3.Location = new System.Drawing.Point(569, 19);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(134, 21);
-            this.comboBox3.TabIndex = 11;
+            this.studentSection.FormattingEnabled = true;
+            this.studentSection.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"});
+            this.studentSection.Location = new System.Drawing.Point(569, 19);
+            this.studentSection.Name = "studentSection";
+            this.studentSection.Size = new System.Drawing.Size(134, 21);
+            this.studentSection.TabIndex = 11;
             // 
             // label7
             // 
@@ -232,17 +234,17 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Address:";
             // 
-            // comboBox1
+            // studentGender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.studentGender.FormattingEnabled = true;
+            this.studentGender.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(103, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(134, 21);
-            this.comboBox1.TabIndex = 5;
+            this.studentGender.Location = new System.Drawing.Point(103, 110);
+            this.studentGender.Name = "studentGender";
+            this.studentGender.Size = new System.Drawing.Size(134, 21);
+            this.studentGender.TabIndex = 5;
             // 
             // label4
             // 
@@ -254,13 +256,13 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Gender:";
             // 
-            // textBox2
+            // studentName
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 63);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 25);
-            this.textBox2.TabIndex = 3;
+            this.studentName.Location = new System.Drawing.Point(103, 63);
+            this.studentName.Multiline = true;
+            this.studentName.Name = "studentName";
+            this.studentName.Size = new System.Drawing.Size(134, 25);
+            this.studentName.TabIndex = 3;
             // 
             // label3
             // 
@@ -272,13 +274,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Full Name:";
             // 
-            // textBox1
+            // studentID
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 21);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 25);
-            this.textBox1.TabIndex = 1;
+            this.studentID.Location = new System.Drawing.Point(103, 21);
+            this.studentID.Multiline = true;
+            this.studentID.Name = "studentID";
+            this.studentID.Size = new System.Drawing.Size(116, 25);
+            this.studentID.TabIndex = 1;
             // 
             // label2
             // 
@@ -294,20 +296,20 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.studentsGridView);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 14);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(851, 298);
             this.panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // studentsGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(813, 221);
-            this.dataGridView1.TabIndex = 1;
+            this.studentsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.studentsGridView.Location = new System.Drawing.Point(17, 58);
+            this.studentsGridView.Name = "studentsGridView";
+            this.studentsGridView.Size = new System.Drawing.Size(813, 221);
+            this.studentsGridView.TabIndex = 1;
             // 
             // label1
             // 
@@ -331,7 +333,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,20 +347,20 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox studentSection;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox studentGender;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox studentName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox studentID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView studentsGridView;
         private System.Windows.Forms.Label label1;
     }
 }
