@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.studentDeleteBtn = new System.Windows.Forms.Button();
+            this.studentClearBtn = new System.Windows.Forms.Button();
+            this.studentUpdateBtn = new System.Windows.Forms.Button();
+            this.studentAddBtn = new System.Windows.Forms.Button();
+            this.studentImportBtn = new System.Windows.Forms.Button();
+            this.studentImagePanel = new System.Windows.Forms.Panel();
+            this.studentImage = new System.Windows.Forms.PictureBox();
             this.studentSection = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.studentGrade = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.studentAddress = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.studentGender = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,7 +52,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.studentsGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.studentStatus = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            this.studentImagePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentImage)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).BeginInit();
             this.SuspendLayout();
@@ -59,17 +65,19 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.studentStatus);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.studentDeleteBtn);
+            this.panel2.Controls.Add(this.studentClearBtn);
+            this.panel2.Controls.Add(this.studentUpdateBtn);
+            this.panel2.Controls.Add(this.studentAddBtn);
+            this.panel2.Controls.Add(this.studentImportBtn);
+            this.panel2.Controls.Add(this.studentImagePanel);
             this.panel2.Controls.Add(this.studentSection);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.studentGrade);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.studentAddress);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.studentGender);
             this.panel2.Controls.Add(this.label4);
@@ -82,93 +90,105 @@
             this.panel2.Size = new System.Drawing.Size(851, 237);
             this.panel2.TabIndex = 3;
             // 
-            // button4
+            // studentDeleteBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(586, 175);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 40);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.studentDeleteBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.studentDeleteBtn.FlatAppearance.BorderSize = 0;
+            this.studentDeleteBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentDeleteBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentDeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.studentDeleteBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentDeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.studentDeleteBtn.Location = new System.Drawing.Point(586, 175);
+            this.studentDeleteBtn.Name = "studentDeleteBtn";
+            this.studentDeleteBtn.Size = new System.Drawing.Size(119, 40);
+            this.studentDeleteBtn.TabIndex = 17;
+            this.studentDeleteBtn.Text = "Delete";
+            this.studentDeleteBtn.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // studentClearBtn
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(428, 175);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 40);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Clear";
-            this.button5.UseVisualStyleBackColor = false;
+            this.studentClearBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.studentClearBtn.FlatAppearance.BorderSize = 0;
+            this.studentClearBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentClearBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.studentClearBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentClearBtn.ForeColor = System.Drawing.Color.White;
+            this.studentClearBtn.Location = new System.Drawing.Point(428, 175);
+            this.studentClearBtn.Name = "studentClearBtn";
+            this.studentClearBtn.Size = new System.Drawing.Size(119, 40);
+            this.studentClearBtn.TabIndex = 16;
+            this.studentClearBtn.Text = "Clear";
+            this.studentClearBtn.UseVisualStyleBackColor = false;
+            this.studentClearBtn.Click += new System.EventHandler(this.studentClearBtn_Click);
             // 
-            // button3
+            // studentUpdateBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(268, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 40);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Update";
-            this.button3.UseVisualStyleBackColor = false;
+            this.studentUpdateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.studentUpdateBtn.FlatAppearance.BorderSize = 0;
+            this.studentUpdateBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentUpdateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentUpdateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.studentUpdateBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentUpdateBtn.ForeColor = System.Drawing.Color.White;
+            this.studentUpdateBtn.Location = new System.Drawing.Point(268, 175);
+            this.studentUpdateBtn.Name = "studentUpdateBtn";
+            this.studentUpdateBtn.Size = new System.Drawing.Size(119, 40);
+            this.studentUpdateBtn.TabIndex = 15;
+            this.studentUpdateBtn.Text = "Update";
+            this.studentUpdateBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // studentAddBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(110, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 40);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
+            this.studentAddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.studentAddBtn.FlatAppearance.BorderSize = 0;
+            this.studentAddBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentAddBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentAddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.studentAddBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentAddBtn.ForeColor = System.Drawing.Color.White;
+            this.studentAddBtn.Location = new System.Drawing.Point(110, 175);
+            this.studentAddBtn.Name = "studentAddBtn";
+            this.studentAddBtn.Size = new System.Drawing.Size(119, 40);
+            this.studentAddBtn.TabIndex = 14;
+            this.studentAddBtn.Text = "Add";
+            this.studentAddBtn.UseVisualStyleBackColor = false;
+            this.studentAddBtn.Click += new System.EventHandler(this.studentAddBtn_Click);
             // 
-            // button1
+            // studentImportBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(725, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 28);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Import";
-            this.button1.UseVisualStyleBackColor = false;
+            this.studentImportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            this.studentImportBtn.FlatAppearance.BorderSize = 0;
+            this.studentImportBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentImportBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.studentImportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.studentImportBtn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentImportBtn.ForeColor = System.Drawing.Color.White;
+            this.studentImportBtn.Location = new System.Drawing.Point(725, 128);
+            this.studentImportBtn.Name = "studentImportBtn";
+            this.studentImportBtn.Size = new System.Drawing.Size(121, 28);
+            this.studentImportBtn.TabIndex = 13;
+            this.studentImportBtn.Text = "Import";
+            this.studentImportBtn.UseVisualStyleBackColor = false;
+            this.studentImportBtn.Click += new System.EventHandler(this.studentImportBtn_Click);
             // 
-            // panel3
+            // studentImagePanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(725, 19);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(121, 110);
-            this.panel3.TabIndex = 12;
+            this.studentImagePanel.BackColor = System.Drawing.Color.Gray;
+            this.studentImagePanel.Controls.Add(this.studentImage);
+            this.studentImagePanel.Location = new System.Drawing.Point(725, 19);
+            this.studentImagePanel.Name = "studentImagePanel";
+            this.studentImagePanel.Size = new System.Drawing.Size(121, 110);
+            this.studentImagePanel.TabIndex = 12;
+            // 
+            // studentImage
+            // 
+            this.studentImage.Location = new System.Drawing.Point(0, 0);
+            this.studentImage.Name = "studentImage";
+            this.studentImage.Size = new System.Drawing.Size(121, 110);
+            this.studentImage.TabIndex = 0;
+            this.studentImage.TabStop = false;
             // 
             // studentSection
             // 
@@ -194,17 +214,19 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Section:";
             // 
-            // comboBox2
+            // studentGrade
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.comboBox2.Location = new System.Drawing.Point(329, 108);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(134, 21);
-            this.comboBox2.TabIndex = 9;
+            this.studentGrade.FormattingEnabled = true;
+            this.studentGrade.Items.AddRange(new object[] {
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.studentGrade.Location = new System.Drawing.Point(329, 108);
+            this.studentGrade.Name = "studentGrade";
+            this.studentGrade.Size = new System.Drawing.Size(134, 21);
+            this.studentGrade.TabIndex = 9;
             // 
             // label6
             // 
@@ -216,13 +238,13 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Grade:";
             // 
-            // textBox3
+            // studentAddress
             // 
-            this.textBox3.Location = new System.Drawing.Point(329, 21);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 67);
-            this.textBox3.TabIndex = 7;
+            this.studentAddress.Location = new System.Drawing.Point(329, 21);
+            this.studentAddress.Multiline = true;
+            this.studentAddress.Name = "studentAddress";
+            this.studentAddress.Size = new System.Drawing.Size(134, 67);
+            this.studentAddress.TabIndex = 7;
             // 
             // label5
             // 
@@ -305,9 +327,23 @@
             // 
             // studentsGridView
             // 
+            this.studentsGridView.AllowUserToAddRows = false;
+            this.studentsGridView.AllowUserToDeleteRows = false;
+            this.studentsGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(87)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.studentsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.studentsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.studentsGridView.EnableHeadersVisualStyles = false;
             this.studentsGridView.Location = new System.Drawing.Point(17, 58);
             this.studentsGridView.Name = "studentsGridView";
+            this.studentsGridView.ReadOnly = true;
+            this.studentsGridView.RowHeadersVisible = false;
             this.studentsGridView.Size = new System.Drawing.Size(813, 221);
             this.studentsGridView.TabIndex = 1;
             // 
@@ -321,6 +357,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Student\'s Data";
             // 
+            // studentStatus
+            // 
+            this.studentStatus.FormattingEnabled = true;
+            this.studentStatus.Items.AddRange(new object[] {
+            "Enrolled",
+            "Pending",
+            "Graduated"});
+            this.studentStatus.Location = new System.Drawing.Point(569, 63);
+            this.studentStatus.Name = "studentStatus";
+            this.studentStatus.Size = new System.Drawing.Size(134, 21);
+            this.studentStatus.TabIndex = 19;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(505, 65);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Status:";
+            // 
             // AddStudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,6 +389,8 @@
             this.Size = new System.Drawing.Size(875, 575);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.studentImagePanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.studentImage)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentsGridView)).EndInit();
@@ -341,17 +401,17 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button studentDeleteBtn;
+        private System.Windows.Forms.Button studentClearBtn;
+        private System.Windows.Forms.Button studentUpdateBtn;
+        private System.Windows.Forms.Button studentAddBtn;
+        private System.Windows.Forms.Button studentImportBtn;
+        private System.Windows.Forms.Panel studentImagePanel;
         private System.Windows.Forms.ComboBox studentSection;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox studentGrade;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox studentAddress;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox studentGender;
         private System.Windows.Forms.Label label4;
@@ -362,5 +422,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView studentsGridView;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox studentImage;
+        private System.Windows.Forms.ComboBox studentStatus;
+        private System.Windows.Forms.Label label8;
     }
 }
